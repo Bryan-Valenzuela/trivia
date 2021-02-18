@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicacion de Trivia</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="js/script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+</head>
+<body>
+    <!-- contenedor de la trivia -->
+    <div class="contenedor-preguntas" id="trivia">
+        <div class="titulo-preguntas">
+            <!-- aqui va la pregunta -->
+            <div class="pregunta">    
+                <h2 id="pregunta">Pregunta?</h2>
+            </div>
+            <div class="respuestas">
+                
+                    <!-- opociones de respuesta -->
+                    <div>
+                        <input type="radio" id="a" name="respuesta" class="respuesta"/>
+                        <!-- for es para unir el valor del label al input del mismo nombre -->
+                        <label id="respuesta_a" for="a">Opciones de respuesta</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="b" name="respuesta" class="respuesta"/>
+                        <label id="respuesta_b" for="b">Opciones de respuesta</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="c" name="respuesta" class="respuesta"/>
+                        <label id="respuesta_c" for="c">Opciones de respuesta</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="d" name="respuesta" class="respuesta"/>
+                        <label id="respuesta_d" for="d">Opciones de respuesta</label>
+                    </div>
+                
+            </div>    
+            <div class="boton">
+                <button id="enviar">Enviar</button>
+            </div> 
+        </div>
+    </div>
+</body>
+</html>
